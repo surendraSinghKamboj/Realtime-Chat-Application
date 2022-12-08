@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+      }
+      ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e1e1e1;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+      }
+      ::-webkit-scrollbar-thumb:active {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-track {
+        background: #666666;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+      }
+      ::-webkit-scrollbar-track:hover {
+        background: #666666;
+      }
+      ::-webkit-scrollbar-track:active {
+        background: #333333;
+      }
+      ::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Chat me</title>
+  </head>
+  <body>
+    <center>
+      <h1>Chat Me</h1>
+    </center>
+    <div class="container">
+      <div class="msg_container">
+        <div class="msgarea"></div>
+        <div class="textbox">
+          <input
+            type="text"
+            id="message"
+            placeholder="Write Message Here...."
+          />
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
